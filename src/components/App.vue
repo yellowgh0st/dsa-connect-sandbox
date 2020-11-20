@@ -16,19 +16,25 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import Web3 from "web3"
+import {DSA} from 'dsa-connect'
 
 export default {
     name: 'app',
-    created
+    beforeCreate
 }
 
-async function created() {
+async function beforeCreate() {
   window.web3 = new Web3(window.ethereum);
+  Vue.prototype.$dsa = new DSA(window.web3)
+  console.log(this.$dsa)
+
   await window.web3.eth.getAccounts().then((accounts) => {
       if(!accounts.length < 1) this.$store.commit('setConnected', true)
       this.$store.dispatch('connect')
   })
+
 }
 </script>
 

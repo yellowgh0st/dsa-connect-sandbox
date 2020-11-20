@@ -17,7 +17,7 @@
     "email": "burim.berisa@protonmail.com"
   },
   "dependencies": {
-    "dsa-connect": "InstaDApp/dsa-connect#283048e",
+    "dsa-connect": "../dsa-connect/dist",
     "git": "^0.1.5",
     "normalize.css": "^7.0.0",
     "object-assign": "^4.1.1",

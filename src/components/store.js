@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import Web3 from 'web3'
-//let web3 = new Web3('wss://mainnet.infura.io/ws/v3/fcc636a538b54959a033709ee3a3ab90')
 
 Vue.use(Vuex)
 

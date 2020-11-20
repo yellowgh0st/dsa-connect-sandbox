@@ -3050,9 +3050,8 @@ dot-prop@^4.2.1:
   dependencies:
     is-obj "^1.0.0"
 
-dsa-connect@InstaDApp/dsa-connect#283048e:
-  version "0.0.3"
-  resolved "git+ssh://git@github.com/InstaDApp/dsa-connect.git#283048edf29c1c2b216bfb42620568baf48023a1"
+dsa-connect@../dsa-connect/dist:
+  version "0.0.4"
 
 duplexer3@^0.1.4:
   version "0.1.4"
